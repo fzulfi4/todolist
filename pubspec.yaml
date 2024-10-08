@@ -1,0 +1,32 @@
+name: todolist_app
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  dio: ^5.6.0
+  get: ^4.6.6
+  get_storage: ^2.1.1
+  intl: ^0.19.0 
+  google_fonts: ^6.2.1 
+  cupertino_icons: ^1.0.8
+  skeletonizer: ^1.4.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/
