@@ -42,12 +42,8 @@ class AddTodoController extends GetxController {
       if (response.statusCode == 2000) {
         Get.dialog(
           MainDialog(
-            content: Column(
-              children: [
-                Text('Todo berhasil ditambahkan'.tr,
-                    textAlign: TextAlign.center),
-              ],
-            ),
+            content: Text('Todo berhasil ditambahkan'.tr,
+                textAlign: TextAlign.center),
             confirm: () {
               Get.back();
               Get.back();

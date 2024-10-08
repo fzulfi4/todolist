@@ -45,7 +45,7 @@ class RegisterBody extends GetView<RegisterController> {
                 left: 0,
                 right: 0,
                 child: Image.asset(
-                  UtilsImages.apps,
+                  UtilsImages.avatar,
                   width: 350,
                   height: 350,
                 ),

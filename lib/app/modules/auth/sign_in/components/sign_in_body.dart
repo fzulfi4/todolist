@@ -45,7 +45,7 @@ class SignInBody extends GetView<SignInController> {
                 left: 0,
                 right: 0,
                 child: Image.asset(
-                  UtilsImages.apps,
+                  UtilsImages.avatar,
                   width: 350,
                   height: 350,
                 ),

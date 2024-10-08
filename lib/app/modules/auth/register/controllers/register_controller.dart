@@ -5,8 +5,6 @@ import 'package:get/get.dart';
 import 'package:todolist_app/app/helper/helper_info_message.dart';
 import 'package:todolist_app/app/modules/auth/register/models/register_model.dart';
 import 'package:todolist_app/app/modules/auth/register/repositories/register_repo.dart';
-import 'package:todolist_app/app/utils/utils_dimensions.dart';
-import 'package:todolist_app/app/utils/utils_images.dart';
 import 'package:todolist_app/app/widgets/main_dialog.dart';
 
 class RegisterController extends GetxController {
@@ -47,18 +45,10 @@ class RegisterController extends GetxController {
       final RegisterModel response =
           await registerService.register(data: jsonData);
 
-      if (response.statusCode != 2000) {
+      if (response.statusCode == 2000) {
         Get.dialog(
           MainDialog(
-            content: Column(
-              children: [
-                Image.asset(UtilsImages.avatar, width: 200.0, height: 200.0),
-                const SizedBox(
-                  height: UtilsDimensions.paddingSizeDefault,
-                ),
-                Text('akun telah dibuat'.tr, textAlign: TextAlign.center),
-              ],
-            ),
+            content: Text('akun telah dibuat'.tr, textAlign: TextAlign.center),
             confirm: () {
               Get.back();
               Get.back();
